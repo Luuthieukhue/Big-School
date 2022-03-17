@@ -108,3 +108,5 @@ C:\Users\MY PC\source\repos\lab3-luuthieukhue\lab3-luuthieukhue\obj\Debug\lab3-l
 C:\Users\MY PC\source\repos\lab3-luuthieukhue\lab3-luuthieukhue\obj\Debug\lab3-luuthieukhue.pdb
 C:\Users\MY PC\source\repos\lab3-luuthieukhue\lab3-luuthieukhue\obj\Debug\lab3_luuthieukhue.Migrations.InitialModel.resources
 C:\Users\MY PC\source\repos\lab3-luuthieukhue\lab3-luuthieukhue\obj\Debug\lab3-luuthieukhue.csproj.GenerateResource.cache
+C:\Users\MY PC\source\repos\lab3-luuthieukhue\lab3-luuthieukhue\obj\Debug\lab3_luuthieukhue.Migrations.CreateTableCourse.resources
+C:\Users\MY PC\source\repos\lab3-luuthieukhue\lab3-luuthieukhue\obj\Debug\lab3_luuthieukhue.Migrations.PopulateCategoryTable.resources
