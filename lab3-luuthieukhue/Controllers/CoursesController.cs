@@ -3,6 +3,7 @@ using lab3_luuthieukhue.ViewModels;
 using Microsoft.AspNet.Identity;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -46,6 +47,18 @@ namespace lab3_luuthieukhue.Controllers
             _dbContext.Courses.Add(course);
             _dbContext.SaveChanges();
             return RedirectToAction("Index", "Home");
+        }
+        [Authorize]
+        public ActionResult Attending()
+        {
+            var userId = User.Identity.GetUserId();
+            var courses = _dbContext.Attendances.Where(a => a.AttendeeId == userId).Select(a => a.Course).Include(c => c.Lecturer).Include(c => c.Category).ToList();
+            var viewModel = new CourseViewModel()
+            {
+                UpcommingCourse = courses,
+                ShowAction = User.Identity.IsAuthenticated,
+            };
+            return View(viewModel);
         }
     }
 }
